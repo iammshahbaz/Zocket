@@ -173,23 +173,23 @@ const Front = () => {
                 <canvas ref={canvasRef} height={1080} width={1080} style={{ width: '400px', height: '400px' }} />
 
                 <div style={{ padding: "20px" }}>
-                    <h3 className="text-xl font-bold font-sans text-center">Ad customization</h3>
-                    <p className='text-md font-sans text-gray-500 text-center mt-4'>Customise your ad and get the templates accordingly</p>
+                    <h3 className="text-2xl font-bold underline text-center text-green-700" style={{fontFamily:'cursive'}}>Ad customization</h3>
+                    <p className='text-xl italic font-sans text-gray-500 text-center mt-4'>Customise your ad and get the templates accordingly</p>
 
                     {/* image */}
                     <div class="flex justify-center align-center" >
-                        <p className="text-sm font-sans text-gray-500 border rounded-md p-2 border-gray-400 mt-5">
+                        <p className="text-md font-sans text-gray-500 border rounded-md p-2 border-gray-400 mt-5" style={{fontFamily: 'cursive',boxShadow: '0 0 5px rgba(0, 123, 255, 0.5)',borderColor: '#007bff'}}>
                             Change the ad creative image </p>
                         <input style={{ color: 'blue', marginTop: '25px', marginLeft: '10px' }} type="file" accept="image/*" ref={imageRef} onChange={handleImageChange} />
                     </div>
 
                     <p className="text-sm font-sans text-gray-500 text-center mt-5" style={gridStyle}>
-                        <hr className='mt-2' style={{ border: "1px solid" }} />Edit contents <hr className='mt-2' style={{ border: "1px solid" }} />
+                        <hr className='mt-2 text-blue-500' style={{ border: "1px solid" }} /><p style={{ color: '#d83261',fontSize:'15px',fontWeight:'bold',fontFamily:'cursive' }}>Edit contents</p> <hr className='mt-2 text-purple-700' style={{ border: "1px solid" }} />
                     </p>
 
                     {/* caption */}
                     <div className="mb-4">
-                        <label className="block text-gray-700 text-sm font-bold mt-2 mb-2" htmlFor="username">
+                        <label className="block text-green-700 text-lg font-bold mt-2 mb-2 " htmlFor="username" style={{fontFamily:'cursive'}}>
                             Ad Content
                         </label>
                         <input
@@ -198,12 +198,13 @@ const Front = () => {
                             type="text"
                             value={caption}
                             onChange={handleCaptionChange}
+                            style={{fontFamily: 'cursive',boxShadow: '0 0 5px rgba(0, 123, 255, 0.5)',borderColor: '#007bff'}}
                         />
                     </div>
 
                     {/* CTA */}
                     <div className="mb-6">
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="ctaInput">
+                        <label className="block text-green-700 text-lg font-bold mb-2" htmlFor="ctaInput" style={{fontFamily:'cursive'}}>
                             CTA
                         </label>
                         <input
@@ -212,11 +213,12 @@ const Front = () => {
                             type="text"
                             value={ctaText}
                             onChange={handleCtaTextChange}
+                            style={{fontFamily: 'cursive',boxShadow: '0 0 5px rgba(0, 123, 255, 0.5)',borderColor: '#007bff'}}
                         />
                         
                         {/* background_color */}
                         <div>
-                            <label className="block text-gray-700 text-sm font-bold mt-4" htmlFor="backgroundColorInput">
+                            <label className="block text-green-700 text-lg font-bold mt-4" htmlFor="backgroundColorInput" style={{fontFamily:'cursive'}}>
                                 Choose your color
                             </label>
                             <div className="flex space-x-2 mt-4">
@@ -229,7 +231,7 @@ const Front = () => {
                                     />
                                 ))}
                                 <button
-                                    style={{ width: "15px", height: "15px", border: "1px solid gray", borderRadius: "50%", fontSize: "8px", cursor: "pointer" }}
+                                    style={{ width: "25px", height: "25px", border: "2px solid", borderRadius: "50%", fontSize: "12px", cursor: "pointer",boxShadow: '0 0 5px rgba(0, 123, 255, 0.5)',borderColor: '#007bff',fontFamily:'cursive' }}
                                     onClick={handlePickerButtonClick}
                                 >+</button>
                             </div>

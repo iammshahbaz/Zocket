@@ -3,6 +3,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body {
+    background: linear-gradient(to left, #e4efe7, #26dcdc);
+  }
+  
+
 @media (max-width: 767px) {
     .flex {
       flex-direction: column; 
