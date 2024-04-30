@@ -4,7 +4,7 @@
 @import 'tailwindcss/utilities';
 
 body {
-    background: linear-gradient(to left, #e4efe7, #26dcdc);
+    background: rgb(206, 204, 204);
   }
   
 
